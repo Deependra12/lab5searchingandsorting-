@@ -1,6 +1,7 @@
 #include<iostream>
+#include "sorting.h"
 using namespace std;
-void insertsort(int data [],int n)
+/*void insertsort(int data [],int n)
 {
 	for(int j=1;j<=n-1;j++)
 	{
@@ -17,7 +18,7 @@ void insertsort(int data [],int n)
 	{
 		cout<<data[k]<<endl;
 	}
-}
+}*/
 int main()
 {
 	int data[]={13,16,9,56,34};
@@ -25,4 +26,8 @@ int main()
 	cout<<n;
 	cout<<"after sorting :";
 	 insertsort(data,n);
+	 for(int k=0;k<=n-1;k++)
+	{
+		cout<<data[k]<<endl;
+	}
 }
