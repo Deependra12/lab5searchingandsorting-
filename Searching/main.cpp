@@ -1,4 +1,5 @@
 #include<iostream>
+#include"../sortingfille/sorting.h"
 
 using namespace std;
 
@@ -17,9 +18,10 @@ bool search(int list[],int min,int max,int num){
 
 
 int main(){
-    int arr[]={1,2,6,9,10};
+    int arr[]={2,9,8,10,6,7};
     int len= sizeof(arr)/sizeof(int);
-    int number=0;
+    int number=9;
+    insertsort(arr,len);
     if(search(arr,0,len-1,number)) cout<<number<< " is present in arrray";
     else cout<<number<<" is not present in array";
     return 0;
